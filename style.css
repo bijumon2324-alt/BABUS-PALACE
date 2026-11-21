@@ -386,3 +386,9 @@ footer {
         font-size: 24px;
     }
 }
+
+/* ADMIN LOGIN BUTTON */
+.admin-login {
+    font-weight: bold;
+    text-decoration: none;
+}
