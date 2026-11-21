@@ -260,4 +260,48 @@ footer {
     .hero {
         min-height: 75vh;
     }
+}/* Contact Section */
+.contact-section {
+    background: #d8b332;
+    color: #111;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-section h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.contact-section p {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.contact-section a {
+    color: #111;
+    font-weight: bold;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-buttons a {
+    background: #111;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.contact-buttons a:hover {
+    background: #333;
 }
