@@ -305,3 +305,84 @@ footer {
 .contact-buttons a:hover {
     background: #333;
 }
+
+/* CEO SECTION */
+.ceo-section {
+    padding: 80px 20px;
+    background: #f8f5ef;
+}
+
+.ceo-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.ceo-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.ceo-photo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.ceo-details {
+    flex: 1;
+}
+
+.ceo-label {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ceo-details h2 {
+    font-size: 38px;
+    margin: 0 0 15px;
+}
+
+.ceo-details h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.ceo-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0 20px;
+}
+
+.ceo-details p {
+    line-height: 1.8;
+}
+
+.ceo-location {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .ceo-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .ceo-details h2 {
+        font-size: 30px;
+    }
+
+    .ceo-details h3 {
+        font-size: 24px;
+    }
+}
