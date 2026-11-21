@@ -1,1 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f5f0;
+    color: #222;
+}
+
+/* Navigation */
+header {
+    background: #111;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* Hero */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+        url("hotel.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 30px;
+}
+
+.welcome {
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 5px;
+    background: #d4af37;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn.secondary {
+    background: white;
+}
+
+/* About */
+.about {
+    text-align: center;
+    padding: 70px 10%;
+}
+
+.about h2,
+.section h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Sections */
+.section {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+/* Rooms */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.room-image {
+    height: 170px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+}
+
+.card p {
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.card button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Facilities */
+.facilities {
+    background: #111;
+    color: white;
+}
+
+.facility-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.facility-grid div {
+    background: #222;
+    padding: 25px;
+    width: 180px;
+    border-radius: 8px;
+    line-height: 2;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-box {
+    width: 280px;
+    height: 190px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* Contact */
+.contact {
+    background: #d4af37;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contact-buttons {
+    margin-top: 25px;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    background: #111;
+    color: white;
+    padding: 13px 25px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+}
