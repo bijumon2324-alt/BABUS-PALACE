@@ -1297,3 +1297,23 @@ header nav a:hover {
         border-radius: 30px !important;
     }
 }
+@media (max-width: 768px) {
+
+    .hero-content a {
+        display: flex !important;
+        width: 280px !important;
+        max-width: 90% !important;
+        min-width: 0 !important;
+        height: 58px !important;
+        margin: 12px auto !important;
+        padding: 0 20px !important;
+        box-sizing: border-box !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        border-radius: 12px !important;
+        font-size: 17px !important;
+    }
+
+}
