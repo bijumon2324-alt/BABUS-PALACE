@@ -49,7 +49,6 @@ table{width:100%;border-collapse:collapse}th,td{padding:12px 8px;border-bottom:1
       <button class="login-btn" type="submit">Login to Dashboard</button>
       <p id="loginError" class="error hidden">Incorrect username or password.</p>
     </form>
-    <p class="hint">Demo login: <b>admin</b> / <b>BP@2026</b></p>
   </div>
 </div>
 
@@ -239,7 +238,7 @@ function logout(){
 
 loginForm.addEventListener("submit",async e=>{
   e.preventDefault();
-  if(username.value.trim()==="admin" && password.value==="BP@2026"){
+  if(username.value.trim()==="Biju" && password.value==="Biju@2026"){
     sessionStorage.setItem("bp_admin","1");
     await showDashboard();
   }else loginError.classList.remove("hidden");
