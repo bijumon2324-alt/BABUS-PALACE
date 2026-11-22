@@ -715,3 +715,280 @@ nav a:first-child {
         font-size: 15px !important;
     }
 }
+
+/* ===== BABUS PALACE - REFERENCE DESIGN ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.18)),
+        url("hotel.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 22px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+/* GOLD LINES AROUND LOGO */
+.logo::before,
+.logo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 130px;
+    height: 2px;
+    background: #d4af37;
+}
+
+.logo::before {
+    right: 105%;
+}
+
+.logo::after {
+    left: 105%;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 105px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+}
+
+nav a:first-child {
+    color: #d4af37;
+}
+
+nav a:first-child::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    height: 3px;
+    background: #d4af37;
+}
+
+/* HOTEL LOGIN */
+.hotel-login {
+    position: absolute;
+    right: 5%;
+    top: 40px;
+
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    border-radius: 35px;
+    padding: 13px 28px;
+
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hotel-login:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 170px;
+    max-width: 750px;
+}
+
+/* WELCOME */
+.welcome {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+
+/* MAIN TITLE */
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    line-height: 0.95;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* GOLD LINE UNDER TITLE */
+.hero h1::after {
+    content: "♛";
+    display: block;
+    color: #d4af37;
+    font-size: 38px;
+    margin-top: 12px;
+}
+
+/* DESCRIPTION */
+.hero-content p:not(.welcome) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 15px auto 30px;
+}
+
+/* BUTTONS */
+.hero-content a,
+.hero-content button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn,
+.hero-content .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 240px;
+    height: 68px;
+
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 8px;
+}
+
+/* VIEW ROOMS */
+.btn-primary {
+    background: #f4c430;
+    color: #111;
+    border: 2px solid #f4c430;
+}
+
+/* CONTACT */
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+
+        font-size: 28px;
+        margin-top: 5px;
+    }
+
+    .logo::before,
+    .logo::after {
+        display: none;
+    }
+
+    nav {
+        margin-top: 75px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .hotel-login {
+        top: 95px;
+        right: 10px;
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 100vh;
+        background-position: center center;
+    }
+
+    .hero-content {
+        margin-top: 150px;
+        padding: 20px;
+    }
+
+    .welcome {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .hero-content p:not(.welcome) {
+        font-size: 17px;
+    }
+
+    .btn,
+    .hero-content .btn {
+        min-width: 240px;
+        height: 58px;
+    }
+}
