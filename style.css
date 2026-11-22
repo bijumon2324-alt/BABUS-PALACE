@@ -264,3 +264,41 @@ nav a:first-child::after {
     min-width: 190px;
 
     padding: 14px 
+   /* ===== PROFESSIONAL HOTEL LOGIN ===== */
+
+.hotel-login {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #c9a227, #f0d477);
+    color: #111 !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.hotel-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(201, 162, 39, 0.4);
+}
+
+.hotel-login-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #8a6810;
+    font-size: 17px;
+}
+
+.hotel-login span:last-child {
+    white-space: nowrap;
+}
