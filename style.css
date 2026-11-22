@@ -1192,3 +1192,108 @@ header nav a:hover {
         width: auto !important;
     }
 }
+
+/* ===== MOBILE SCREEN FIX ===== */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        width: 100% !important;
+        padding: 18px 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Logo */
+    .logo {
+        font-size: 28px !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    /* Navigation */
+    header nav {
+        width: 100% !important;
+        gap: 14px !important;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
+        margin-top: 18px !important;
+    }
+
+    header nav a {
+        font-size: 14px !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+    }
+
+    /* Hotel Login */
+    .hotel-login {
+        align-self: center !important;
+        margin-top: 18px !important;
+        padding: 10px 20px !important;
+        font-size: 15px !important;
+        white-space: nowrap !important;
+    }
+
+    /* Hero */
+    .hero {
+        width: 100% !important;
+        min-height: 100vh !important;
+        overflow: hidden !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 20px 18px !important;
+        margin-top: 150px !important;
+        text-align: center !important;
+    }
+
+    /* Welcome */
+    .welcome {
+        font-size: 17px !important;
+        letter-spacing: 5px !important;
+        white-space: nowrap !important;
+    }
+
+    /* BABUS PALACE */
+    .hero h1 {
+        font-size: 48px !important;
+        line-height: 1.05 !important;
+        margin: 12px 0 22px !important;
+    }
+
+    /* Description */
+    .hero-content > p:not(.welcome) {
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+        margin: 0 auto 25px !important;
+        max-width: 340px !important;
+    }
+
+    /* BUTTON CONTAINER */
+    .hero-content {
+        overflow: hidden !important;
+    }
+
+    /* ALL HERO BUTTONS */
+    .hero button,
+    .hero a.button,
+    .hero .btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+        width: auto !important;
+        max-width: calc(100% - 20px) !important;
+        min-width: 0 !important;
+        padding: 14px 25px !important;
+        margin: 7px 5px !important;
+        font-size: 16px !important;
+        border-radius: 30px !important;
+    }
+}
