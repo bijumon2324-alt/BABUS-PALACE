@@ -1175,13 +1175,13 @@ footer p{
         padding:9px 12px!important;
     }
 }
-/* =================================
-   MANAGING DIRECTOR
-================================= */
+/* =========================================
+   MANAGING DIRECTOR - PREMIUM BLACK DESIGN
+========================================= */
 
 .md-section {
     padding: 80px 20px;
-    background: #f8f6f1;
+    background: #000000;
 }
 
 .md-container {
@@ -1190,10 +1190,11 @@ footer p{
     display: flex;
     align-items: center;
     gap: 55px;
-    background: #ffffff;
-    padding: 45px;
-    border-radius: 18px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    background: #080808;
+    padding: 50px;
+    border-radius: 22px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
 }
 
 .md-photo {
@@ -1205,9 +1206,9 @@ footer p{
     width: 230px;
     height: 280px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 14px;
     border: 4px solid #c9a45c;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(201, 164, 92, 0.20);
 }
 
 .md-content {
@@ -1217,36 +1218,44 @@ footer p{
 .md-label {
     display: inline-block;
     font-size: 13px;
-    letter-spacing: 3px;
-    color: #b18a3b;
+    letter-spacing: 4px;
+    color: #c9a45c !important;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .md-content h2 {
-    margin: 0;
-    font-size: 42px;
-    letter-spacing: 2px;
-    color: #222;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 48px !important;
+    line-height: 1.1 !important;
+    letter-spacing: 4px !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
 }
 
 .md-content h3 {
-    margin: 8px 0 20px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #b18a3b;
+    margin: 10px 0 22px !important;
+    font-size: 21px !important;
+    font-weight: 500 !important;
+    color: #c9a45c !important;
 }
 
 .md-content p {
     font-size: 16px;
     line-height: 1.8;
-    color: #666;
+    color: #d0d0d0 !important;
     max-width: 600px;
 }
 
-/* =================================
-   MOBILE RESPONSIVE
-================================= */
+.md-content strong {
+    color: #ffffff !important;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 768px) {
 
@@ -1257,8 +1266,13 @@ footer p{
     .md-container {
         flex-direction: column;
         text-align: center;
-        gap: 25px;
-        padding: 30px 20px;
+        gap: 30px;
+        padding: 35px 20px;
+        border-radius: 20px;
+    }
+
+    .md-photo {
+        flex: none;
     }
 
     .md-photo img {
@@ -1267,16 +1281,18 @@ footer p{
     }
 
     .md-content h2 {
-        font-size: 32px;
+        font-size: 38px !important;
+        letter-spacing: 3px !important;
+        color: #ffffff !important;
     }
 
     .md-content h3 {
-        font-size: 18px;
+        font-size: 19px !important;
     }
 
     .md-content p {
         font-size: 15px;
-        line-height: 1.7;
+        line-height: 1.8;
     }
 }
 
