@@ -205,6 +205,143 @@
 
     </div>
 </section>
+    <!-- Managing Director Section -->
+<section class="md-section" id="managing-director">
+
+    <div class="md-container">
+
+        <div class="md-photo">
+            <img src="md.jpg" alt="Biju - Managing Director">
+        </div>
+
+        <div class="md-content">
+            <span class="md-label">LEADERSHIP</span>
+
+            <h2>BIJU</h2>
+
+            <h3>Managing Director</h3>
+
+            <p>
+                With dedicated leadership and a commitment to excellence,
+                our Managing Director, <strong>Biju</strong>, continues to
+                guide the hotel with a vision of quality, hospitality and
+                exceptional guest experiences.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+2. Add this to the bottom of "style.css"
+
+:::writing{variant="document" id="31847" title="Managing Director CSS"}
+
+/* =================================
+   MANAGING DIRECTOR
+================================= */
+
+.md-section {
+    padding: 80px 20px;
+    background: #f8f6f1;
+}
+
+.md-container {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.md-photo {
+    flex: 0 0 260px;
+    text-align: center;
+}
+
+.md-photo img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #c9a45c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.md-content {
+    flex: 1;
+}
+
+.md-label {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #b18a3b;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.md-content h2 {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+.md-content h3 {
+    margin: 8px 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b18a3b;
+}
+
+.md-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    max-width: 600px;
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .md-section {
+        padding: 55px 15px;
+    }
+
+    .md-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .md-photo img {
+        width: 190px;
+        height: 235px;
+    }
+
+    .md-content h2 {
+        font-size: 32px;
+    }
+
+    .md-content h3 {
+        font-size: 18px;
+    }
+
+    .md-content p {
+        font-size: 15px;
+    }
+}
+
+Photo: rename your MD photo to "md.jpg" and keep it in the same folder as "index.html".
     <!-- Contact -->
     
 <!-- Contact -->
