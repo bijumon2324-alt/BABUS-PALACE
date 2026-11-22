@@ -43,20 +43,15 @@ nav a:hover {
 
 /* Hero */
 .hero {
-    min-height: 100vh;
+    min-height: 100vh !important;
     width: 100%;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.40)),
-        url("hotel.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.40)),
+        url("./hotel.jpg") center center / cover no-repeat !important;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    position: relative;
 }
 
 .hero-content {
