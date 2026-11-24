@@ -316,9 +316,11 @@
           </div>
           <label>Guest name <input name="name" type="text" placeholder="Your full name" required></label>
           <label>Email <input name="email" type="email" placeholder="you@example.com" required></label>
-          <button class="booking-submit" type="submit">Confirm Booking</button>
+          <button class="booking-submit" type="submit">Pay & Confirm Booking</button>
         </form>
-        <p class="booking-note">Submitting opens WhatsApp with your booking request for confirmation.</p>
+        <p class="booking-note">
+    Complete the secure Razorpay payment to confirm your booking.
+</p>
       </div>
     </div>
 
@@ -333,7 +335,8 @@
 
     <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
 
-    <script src="script.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="script.js"></script>
     
 </body>
 </html>
